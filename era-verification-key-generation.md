@@ -5,7 +5,7 @@ If an upgrade changes the ZK circuit, the verifier contract is updated as well. 
 1) Clone the zksync-era repo and check out the branch where the circuit is patched:
 
 ```
-git clone https://github.com/matter-labs/zksync-era.git
+git clone --recurse-submodules https://github.com/matter-labs/zksync-era.git
 ```
 
 2) Run the verification key generation command. Generating verification keys is a heavy task and may take ~15 minutes on a modern laptop.
