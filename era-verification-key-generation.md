@@ -2,6 +2,29 @@
 
 If an upgrade changes the ZK circuit, the verifier contract is updated as well. To confirm that the newly deployed verifier matches the circuit’s verification keys, regenerate the verification keys locally, construct the Verifier contract, and compare its bytecode to what’s deployed on-chain. This guide focuses on generating the keys and the verifier contract.
 
+### Prerequisites
+
+Only Rust + Cargo.
+When running on a new VM:
+
+## OpenSSL
+
+Install OpenSSL:
+
+On mac:
+
+```bash
+brew install openssl
+```
+
+On debian-based linux:
+
+```bash
+sudo apt-get install libssl-dev
+```
+
+### Instructions
+
 1) Clone the zksync-era repo and check out the branch where the circuit is patched:
 
 ```
